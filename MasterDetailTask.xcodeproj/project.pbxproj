@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		0FD6E8EA1E2BE314003AA498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E8E91E2BE314003AA498 /* AppDelegate.swift */; };
-		0FD6E8EC1E2BE314003AA498 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E8EB1E2BE314003AA498 /* ViewController.swift */; };
 		0FD6E8EF1E2BE314003AA498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD6E8ED1E2BE314003AA498 /* Main.storyboard */; };
 		0FD6E8F11E2BE314003AA498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD6E8F01E2BE314003AA498 /* Assets.xcassets */; };
 		0FD6E8F41E2BE314003AA498 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD6E8F21E2BE314003AA498 /* LaunchScreen.storyboard */; };
+		0FD6E8FF1E2BE43E003AA498 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E8FE1E2BE43E003AA498 /* CollectionViewController.swift */; };
+		0FD6E9011E2BE61B003AA498 /* feedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E9001E2BE61B003AA498 /* feedService.swift */; };
+		0FD6E9051E2C1F31003AA498 /* MaterCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E9041E2C1F31003AA498 /* MaterCollectionCell.swift */; };
+		0FD6E9071E2C215A003AA498 /* FlickrData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E9061E2C215A003AA498 /* FlickrData.swift */; };
+		0FD6E9291E2CEB8F003AA498 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E9281E2CEB8F003AA498 /* DetailViewController.swift */; };
+		0FD6E92B1E2D0C17003AA498 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E92A1E2D0C16003AA498 /* extensions.swift */; };
+		0FD6E92D1E2D13D8003AA498 /* commonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD6E92C1E2D13D8003AA498 /* commonData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FD6E8E61E2BE314003AA498 /* MasterDetailTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterDetailTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD6E8E91E2BE314003AA498 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0FD6E8EB1E2BE314003AA498 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FD6E8EE1E2BE314003AA498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FD6E8F01E2BE314003AA498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FD6E8F31E2BE314003AA498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FD6E8F51E2BE314003AA498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FD6E8FE1E2BE43E003AA498 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		0FD6E9001E2BE61B003AA498 /* feedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedService.swift; sourceTree = "<group>"; };
+		0FD6E9041E2C1F31003AA498 /* MaterCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterCollectionCell.swift; path = ../MaterCollectionCell.swift; sourceTree = "<group>"; };
+		0FD6E9061E2C215A003AA498 /* FlickrData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrData.swift; sourceTree = "<group>"; };
+		0FD6E9281E2CEB8F003AA498 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0FD6E92A1E2D0C16003AA498 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		0FD6E92C1E2D13D8003AA498 /* commonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commonData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,52 @@
 		0FD6E8E81E2BE314003AA498 /* MasterDetailTask */ = {
 			isa = PBXGroup;
 			children = (
-				0FD6E8E91E2BE314003AA498 /* AppDelegate.swift */,
-				0FD6E8EB1E2BE314003AA498 /* ViewController.swift */,
+				0FD6E9061E2C215A003AA498 /* FlickrData.swift */,
+				0FD6E8FD1E2BE374003AA498 /* controllers */,
+				0FD6E8FC1E2BE369003AA498 /* services */,
+				0FD6E8FB1E2BE355003AA498 /* common */,
+				0FD6E92E1E2D1426003AA498 /* cellModel */,
 				0FD6E8ED1E2BE314003AA498 /* Main.storyboard */,
+				0FD6E8E91E2BE314003AA498 /* AppDelegate.swift */,
 				0FD6E8F01E2BE314003AA498 /* Assets.xcassets */,
 				0FD6E8F21E2BE314003AA498 /* LaunchScreen.storyboard */,
 				0FD6E8F51E2BE314003AA498 /* Info.plist */,
 			);
 			path = MasterDetailTask;
+			sourceTree = "<group>";
+		};
+		0FD6E8FB1E2BE355003AA498 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0FD6E92A1E2D0C16003AA498 /* extensions.swift */,
+				0FD6E92C1E2D13D8003AA498 /* commonData.swift */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		0FD6E8FC1E2BE369003AA498 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				0FD6E9001E2BE61B003AA498 /* feedService.swift */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
+		0FD6E8FD1E2BE374003AA498 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0FD6E8FE1E2BE43E003AA498 /* CollectionViewController.swift */,
+				0FD6E9281E2CEB8F003AA498 /* DetailViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		0FD6E92E1E2D1426003AA498 /* cellModel */ = {
+			isa = PBXGroup;
+			children = (
+				0FD6E9041E2C1F31003AA498 /* MaterCollectionCell.swift */,
+			);
+			name = cellModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +146,7 @@
 				TargetAttributes = {
 					0FD6E8E51E2BE314003AA498 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3D5NL7HUQ3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FD6E8EC1E2BE314003AA498 /* ViewController.swift in Sources */,
+				0FD6E9071E2C215A003AA498 /* FlickrData.swift in Sources */,
+				0FD6E9051E2C1F31003AA498 /* MaterCollectionCell.swift in Sources */,
+				0FD6E8FF1E2BE43E003AA498 /* CollectionViewController.swift in Sources */,
+				0FD6E92B1E2D0C17003AA498 /* extensions.swift in Sources */,
+				0FD6E9011E2BE61B003AA498 /* feedService.swift in Sources */,
 				0FD6E8EA1E2BE314003AA498 /* AppDelegate.swift in Sources */,
+				0FD6E92D1E2D13D8003AA498 /* commonData.swift in Sources */,
+				0FD6E9291E2CEB8F003AA498 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3D5NL7HUQ3;
 				INFOPLIST_FILE = MasterDetailTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.affluvar.test.MasterDetailTask;
@@ -270,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3D5NL7HUQ3;
 				INFOPLIST_FILE = MasterDetailTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.affluvar.test.MasterDetailTask;
