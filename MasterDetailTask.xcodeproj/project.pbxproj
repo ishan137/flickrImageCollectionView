@@ -29,7 +29,7 @@
 		0FD6E8F51E2BE314003AA498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FD6E8FE1E2BE43E003AA498 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		0FD6E9001E2BE61B003AA498 /* feedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedService.swift; sourceTree = "<group>"; };
-		0FD6E9041E2C1F31003AA498 /* MaterCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterCollectionCell.swift; path = ../MaterCollectionCell.swift; sourceTree = "<group>"; };
+		0FD6E9041E2C1F31003AA498 /* MaterCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterCollectionCell.swift; sourceTree = "<group>"; };
 		0FD6E9061E2C215A003AA498 /* FlickrData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrData.swift; sourceTree = "<group>"; };
 		0FD6E9281E2CEB8F003AA498 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0FD6E92A1E2D0C16003AA498 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 				0FD6E92A1E2D0C16003AA498 /* extensions.swift */,
 				0FD6E92C1E2D13D8003AA498 /* commonData.swift */,
 			);
-			name = common;
+			path = common;
 			sourceTree = "<group>";
 		};
 		0FD6E8FC1E2BE369003AA498 /* services */ = {
@@ -94,7 +94,7 @@
 			children = (
 				0FD6E9001E2BE61B003AA498 /* feedService.swift */,
 			);
-			name = services;
+			path = services;
 			sourceTree = "<group>";
 		};
 		0FD6E8FD1E2BE374003AA498 /* controllers */ = {
@@ -103,7 +103,7 @@
 				0FD6E8FE1E2BE43E003AA498 /* CollectionViewController.swift */,
 				0FD6E9281E2CEB8F003AA498 /* DetailViewController.swift */,
 			);
-			name = controllers;
+			path = controllers;
 			sourceTree = "<group>";
 		};
 		0FD6E92E1E2D1426003AA498 /* cellModel */ = {
@@ -111,7 +111,7 @@
 			children = (
 				0FD6E9041E2C1F31003AA498 /* MaterCollectionCell.swift */,
 			);
-			name = cellModel;
+			path = cellModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +356,7 @@
 				0FD6E8FA1E2BE314003AA498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
