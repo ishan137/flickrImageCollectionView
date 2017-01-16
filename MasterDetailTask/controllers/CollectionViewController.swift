@@ -21,7 +21,7 @@ class CollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         greyActivityView.startAnimating()
         greyActivityView.hidesWhenStopped = true
         

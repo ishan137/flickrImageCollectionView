@@ -14,7 +14,6 @@ class FlickrData {
     var description = ""
     var imageURL = ""
     var flickrImage : UIImage?
-    
 }
 var flickrFeed = FlickrData()
 var feedData = [FlickrData]()

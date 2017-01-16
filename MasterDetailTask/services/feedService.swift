@@ -24,22 +24,18 @@ let task = session.dataTask(with: urlRequest as URLRequest, completionHandler: {
             else {
                 print("error unwrapping nil")
                 return
-        }
+            }
         
-        var count = 0
         if let teams = json["items"] as? [[String:Any]] {
             for team in teams {
-                count = count + 1
                 let feeds = FlickrData()
                 if let name = team["title"] as? String {
                     feeds.title = team["title"] as! String
-                
                 }
                 
                 if let picture = team["media"] as? [String:Any] {
                     if let pictureLink = picture["m"] as? String {
                         feeds.imageURL = pictureLink
-                        print("enter \(count)")
                         if let imageData = getPhotoDataWithURL(url: pictureLink) {
                         feeds.flickrImage = UIImage(data: imageData as Data)
                         }
@@ -51,10 +47,6 @@ let task = session.dataTask(with: urlRequest as URLRequest, completionHandler: {
                     feeds.description = team["description"] as! String
                 }
                 feedData.append(feeds)
-
-                print(feeds.title)
-                print(feeds.imageURL)
-                print(feeds.description)
             }
 
             completion()
@@ -62,6 +54,7 @@ let task = session.dataTask(with: urlRequest as URLRequest, completionHandler: {
         }
     } catch {
         print("error serializing JSON: \(error)")
+        
         completion()
     }
     
